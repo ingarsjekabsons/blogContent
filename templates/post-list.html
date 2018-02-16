@@ -1,0 +1,13 @@
+$for(posts)$
+    <a class="ta" href="$url$">$title$</a>
+    <div class="info">Publicēts $date$</div>
+        <p>
+            $if(teaser)$
+                $teaser$
+            $else$
+                $body$
+            $endif$
+            <a class="link_more" href="$url$">>>Lasi tālāk...</a>
+        </p>
+$endfor$
+
